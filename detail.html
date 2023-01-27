@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail 개인프로젝트 - Yuphoria</title>
+
+    <script src="./js/detail.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+</style>
+
+<script>
+    
+    $(document).ready(function(){
+    $('.your-class').slick({
+        infinite: true,
+        slidesToShow: 3,
+        autoplay: true,
+        slidesToScroll: 3
+    });
+    });
+	
+</script>
+
+<body>
+    <header class="header" id="header">
+        <nav class="gnb">
+            <ul>
+                <li><a href="javascript:void(0)" onclick=" window.open('login.html','로그인', 'top=100, left=100')">로그인</a></li>
+                <li><a href="#!">장바구니</a></li>
+                <li>
+                    <input type="checkbox" name="chk" id="chk">
+                    <label for="chk" class="chk_btn">검색</label>
+                    <div class="search_sheet">
+                        <input type="search" name="search" id="search" placeholder="입력하세요">
+                        <button class="search_btn">Search</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo"><a href="./index.html">YUPHORIA</a></div>
+        <nav class="lnb">
+            <ul>
+                <li><a href="#!">ABOUT</a></li>
+                <li><a href="#!">SHOP</a>
+                    <ul>
+                        <li><a href="./sub.html">PHONE CASE</a></li>
+                        <li><a href="./sub.html">AIRPODS/ BUDS</a></li>
+                        <li><a href="./sub.html">SMART TOK</a></li>
+                        <li><a href="./sub.html">LIFE</a></li>
+                    </ul></li>
+                <li><a href="#!">MORE</a>
+                    <ul>
+                        <li><a href="./sub.html">NOTICE</a></li>
+                        <li><a href="./sub.html">REVIEW</a></li>
+                        <li><a href="./sub.html">Q&A</a></li>
+                    </ul>
+                </li>
+                <li><a href="#!">WORLD</a>
+                    <ul>
+                        <li><a href="#!">Have a good trip !</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrap">
+        <section class="detail">
+            <div class="detail01">
+                <p class="root">Airpods/ Buds <i class="fa-solid fa-chevron-right"></i> Airpods Case </p></span>
+
+                <div class="detail_sheet"><img src="./images/airpod_detail_main01.jpg" alt="" ></div>
+                
+                <div class="thum01"></div>
+                <div class="thum02"></div>
+                <div class="thum03"></div>
+                <div class="thum04"></div>
+            </div>
+
+            <div class="detail02">
+                <p class="title">Angela Odd Airpods Case</p>
+                <div class="price_box"></div>
+                <p><span class="ko">배송비 &nbsp;&nbsp;&nbsp;&nbsp;3,000원 (50,000원 이상 구매 시 무료)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제주 및 도서 산간 3,000원 추가</span> </p>
+                <p><span class="ko">수량</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" name="number" id="number" min="1" max="99" placeholder="1">
+                </p>
+                <hr/>
+                <div class="price_box2">
+                    <p class="order">주문 수량</p>
+                    <p class="product_number"></p>
+                    <p class="result_price">총 금액</p>
+                    <p class="result"></p>
+                </div>
+                <div class="btn_box">
+                    <button onclick="alert('로그인이 필요한 서비스입나다.')">구매하기</button>
+                    <button onclick="alert('로그인이 필요한 서비스입나다.')">장바구니</button>
+                </div>
+
+                <span class="ko" style="font-size: 17px;">꿈속에서 본듯한 안젤라로즈의 이미지를 몽환적인 무드로 풀어낸 유광 케이스 입니다.<br/> 리뉴얼 되어 전보다 푸른컬러감이 더 돋보이며,<br/> 오묘한 보랏빛과 푸른빛이 섞여 유포리아의 뛰어난 컬러감이 매력적인 제품입니다.</span>
+            </div>
+        </section>
+
+        <section class="detail_pic">
+            <h1>Recommend Products</h1>
+            <p class="product_sub">본 상품의 구매자 분들은 아래 상품들도 함께 구매하셨습니다.</p>
+
+            <div class="your-class">
+                <a href="#!"><img src="./images/mainair01.jpg" alt="제품1"></a>
+                <a href="#!"><img src="./images/mainair02.jpg" alt="제품2"></a>
+                <a href="#!"><img src="./images/mainair03.jpg" alt="제품3"></a>
+                <a href="#!"><img src="./images/mainair04.jpg" alt="제품4"></a>
+                <a href="#!"><img src="./images/mainair05.jpg" alt="제품5"></a>
+                <a href="#!"><img src="./images/mainair06.jpg" alt="제품6"></a>
+                <a href="#!"><img src="./images/mainair07.jpg" alt="제품7"></a>
+                <a href="#!"><img src="./images/mainair08.jpg" alt="제품8"></a>
+              </div>
+
+             
+
+        <section class="d_pic">
+                <div class="pic01"></div>
+                <div class="pic02"></div>
+                <div class="pic03"></div>
+                <div class="pic04"></div>
+                <div class="pic05"></div>
+            </section>
+        </section>
+
+        <section class="review_section" id="review_section">
+            <h1 class="review_title">Review</h1>
+
+            <div class="review_box" ></div>
+            <div class="write_box">
+                <input type="text" name="txt" id="txt" class="txt" placeholder="입력해주세요">
+                
+                <label for="file" class="upload_pic"><input type="file" name="file" id="file" accept="img/*"><i class="fa-solid fa-camera"></i></label>
+
+                <button class="save" onclick="$('.write_box').css('display','none'),$('.review_box').css('display','block'), $('.post').css('display','block')">SAVE</button>
+                <button class="close" onClick="$('.write_box').css('display','none'), $('.review_box').css('display','block'),$('.post').css('display','block')">CLOSE</button>
+
+            </div>
+            <button class="post" onClick="$('.review_box').css('display','none'), $('.write_box').css('display','block'), $('.post').css('display','none')">POST REVIEW</button>
+
+        </section>
+        
+
+    </div>
+
+    <footer class="footer" id="footer">
+        <ul>
+            <li><a href="#!"><span class="price_end">회사소개</span></a></li>
+            <li><a href="#!"><span class="price_end">이용약관</span></a></li>
+            <li><a href="#!"><span class="price_end">개인정보취급방침</span></a></li>
+            <li><a href="#!"><span class="price_end">이용안내</span></a></li>
+            <li><a href="#!"><span class="price_end">제휴문의</span></a></li>
+        </ul>
+
+        <div class="footer_bottom">
+            <ul class="btm01">
+                <li>Customer Center<br/><i class="fa-solid fa-phone"></i> 070-123-4567</li>
+                <li>
+                    <span class="price_end">평일 오전 </span>10:00 ~ <span class="price_end">오후 </span> 5:00 <br/>
+                    <span class="price_end">점심 오후 </span>12:00 ~ <span class="price_end">오후 </span>1:30
+
+                </li>
+            </ul>
+
+            <ul class="btm02">
+                <li>Company Name: Yuphoria | Owner: JihaLim</li>
+                <li>Email: worldofyuphoria@gmail.com</li>
+                <li>Address: <span class="price_end">서울특별시 중구 퇴계로 27길 40 B1층</span> </li>
+                <li>Business Registration Number: 012- 34 - 56789</li>
+                <li><a href="#!"><span class="price_end">안전구매 (에스크로)서비스 가맹점</span></a></li>
+                <li>Copyright Yuphoria All rights resserved</li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <section class="quick">
+        <ul>
+            <li><a href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <p>검색</p>
+            </li>
+
+            <li><a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
+            <p>장바구니</p>
+            </li>
+
+            <li><a href="#!"><i class="fa-solid fa-heart"></i></a>
+            <p>찜상품</p>
+            </li>
+
+            <li><a href="#!"><i class="fa-regular fa-clock"></i></a>
+            <p>최근 본 상품</p>
+            </li>
+
+            <li><a href="#!"></a>
+            <p>카톡문의</p>
+            </li>
+
+            <li><a href="#header"><i class="fa-solid fa-chevron-up"></i></a>
+            <p>TOP</p>
+            </li>
+
+            <li><a href="#footer"><i class="fa-solid fa-chevron-down"></i></a>
+            <p>DOWN</p>
+            </li>
+        </ul>
+    </section>
+    
+    
+
+
+
+</body>
+</html>

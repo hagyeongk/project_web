@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_page</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.css">
+</head>
+<script>
+    window.resizeTo(450,500)
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
+    *{margin: 0; padding: 0; font-family: 'Uchen', serif;}
+    a{text-decoration: none; color: black;}
+    li{list-style: none;}
+
+
+    .wrap {
+        width: 450px; height: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .home {
+        display: inline-block;
+        width: 100%; text-align: center;
+        margin-top: 20px;
+        font-size: 30px;
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
+    #id, #pw {
+        width: 80%;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+    button {
+        width: 80%; height: 30px;
+        border: 0;
+        border-radius: 3px;
+        background-color: #ccc;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .login {margin-bottom: 10px;}
+    button:hover {
+        color: white;
+        background-color: black;
+    }
+.ko {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13px;
+}
+
+
+</style>
+<body>
+    <div class="wrap">
+        <a href="#!" class="home">YUPHORIA</a>
+
+        <label for="id"><input type="id" name="id" id="id" placeholder="ID" required></label>
+        <label for="pw"><input type="password" name="pw" id="pw" placeholder="Password" required></label>
+        <button class="login">Login</button>
+        <p class="ko">또는</p>
+        <button Join class="join" onclick="window.open('join.html', 'width=1280, height=900')">Join</button>
+
+    </div>
+    <script>
+
+
+        let id = document.getElementById('id')
+        let pw = document.getElementById('pw')
+        let btn = document.querySelector('.login')
+        let join = document.querySelector('.join')
+        
+       
+    
+        btn.addEventListener('click', function(){
+            if(id.value == 'hagyeong' && pw.value == '1234'){
+                alert('로그인 성공!')
+                window.close()
+            } else if(id.value == '' || pw.value == '') {
+                alert('먼저 아이디와 비밀번호를 입력해주세요')
+                location.reload()
+            } else if(id.value != 'hagyeong' && pw.value != '1234'){
+                alert('아이디와 비밀번호 모두 일치하지 않습니다')
+                location.reload()
+            } else {
+                if(id.value == 'hagyeong' && pw.value != '1234') {
+                    alert('비밀번호가 일치하지 않습니다')
+                    location.reload()
+                } else {
+                    if(id.value != 'hagyeong' && pw.value == '1234'){
+                        alert('아이디가 일치하지 않습니다')
+                        location.reload()
+                    }
+                }
+            } 
+        }) 
+
+        join.addEventListener('click',function(){
+            window.close()
+        })
+        
+
+        
+    
+    
+    </script>
+
+</body>
+</html>
