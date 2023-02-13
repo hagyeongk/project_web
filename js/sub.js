@@ -36,7 +36,7 @@ for(let i=0; i<bestList.length; i++){
         bestImg.src = bestList[i].src
     })
     bestImg.addEventListener('click',function detail (){
-        window.location.assign("http://127.0.0.1:5500/detail.html")
+        window.location.href="detail.html"
     })
 
     let cheapList = document.querySelector('.cheap')
